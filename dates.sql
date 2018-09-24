@@ -87,3 +87,4 @@ FROM customers
 right  join orders
 on customers.CustomerID = orders.customerid;
 
+                            
