@@ -45,13 +45,10 @@ delimiter //
 
 create procedure ps1 (out empno int, out deptno varchar(100))
 begin
-select emp_no into empno
+select emp_no,dept_no into empno,deptno
 from smalldept_emp
 where emp_no = '10001';
 
-select dept_no into deptno
-from smalldept_emp
-where emp_no = '10001';
 
 end;
 
