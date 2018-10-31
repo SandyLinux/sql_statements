@@ -60,3 +60,22 @@ set @a := 1;
 call ps1(@a,@b);
 
 select concat_ws('== ',@a, @b);
+
+							
+//in the command line							
+							mysql> delimiter $$
+mysql> create procedure emptytables()
+    -> begin 
+    -> truncate table interfaces;
+    -> truncate table node;
+    -> end$$
+Query OK, 0 rows affected (0.09 sec)
+
+mysql> delimiter ;
+mysql> 
+mysql> 
+mysql> call emptytable();
+ERROR 1305 (42000): PROCEDURE school.emptytable does not exist
+mysql> call emptytables();
+Query OK, 0 rows affected (0.14 sec)
+
