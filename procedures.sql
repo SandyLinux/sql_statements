@@ -63,7 +63,7 @@ select concat_ws('== ',@a, @b);
 
 							
 //in the command line							
-							mysql> delimiter $$
+mysql> delimiter $$
 mysql> create procedure emptytables()
     -> begin 
     -> truncate table interfaces;
