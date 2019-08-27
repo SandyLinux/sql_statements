@@ -13,6 +13,7 @@ having count(emp_no) > 20000
 order by dept_no
 ;
 
+-- massive data 1
 
 --- massive data
 
